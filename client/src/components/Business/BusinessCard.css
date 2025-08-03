@@ -1,0 +1,147 @@
+/* Business Card styles */
+.business-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.business-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.business-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.business-card-header {
+  padding: 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.business-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f1f3f4;
+}
+
+.business-logo-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid #f1f3f4;
+}
+
+.business-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f8f9fa;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.star-icon {
+  color: #ffc107;
+  fill: #ffc107;
+}
+
+.review-count {
+  color: #666;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.business-card-content {
+  padding: 0 20px 20px;
+}
+
+.business-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.business-category {
+  color: #667eea;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.business-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.business-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.business-location,
+.business-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.business-location svg,
+.business-phone svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .business-card-header {
+    padding: 16px 16px 0;
+  }
+  
+  .business-card-content {
+    padding: 0 16px 16px;
+  }
+  
+  .business-logo,
+  .business-logo-placeholder {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .business-logo-placeholder {
+    font-size: 20px;
+  }
+  
+  .business-name {
+    font-size: 1.1rem;
+  }
+}
