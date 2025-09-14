@@ -15,7 +15,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #00ff00 0%, #bbff00 50%, #32CD32 100%);
+  background: linear-gradient(135deg, #006400 0%, #228B22 50%, #32CD32 100%);
   overflow: hidden;
 }
 
